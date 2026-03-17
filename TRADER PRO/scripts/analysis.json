@@ -1,0 +1,133 @@
+{
+  "asset_display": "US30 (Dow Jones)",
+
+  "sesgo_filas": [
+    [
+      "Tendencia de meses (Gráfico Semanal)",
+      "BAJA ↓",
+      "El Dow llegó al máximo histórico de 50,268 el 10 de febrero y desde ahí los grandes inversores están vendiendo. La tendencia de fondo es alcista de largo plazo, pero entró en corrección bajista."
+    ],
+    [
+      "Últimos días (Gráfico Diario)",
+      "BAJA ↓",
+      "Caída de ~3,700 puntos desde el máximo. Cada día cierra más bajo. Los vendedores tienen el control claro. Precio actual: ~46,558."
+    ],
+    [
+      "Últimas horas (Gráfico de 4 horas)",
+      "BAJA ↓",
+      "Secuencia de máximos y mínimos cada vez más bajos. La zona 47,300–47,500 actúa como techo de ventas donde los grandes rechazaron el precio con fuerza."
+    ],
+    [
+      "Ahora mismo (Gráfico de 1 hora)",
+      "BAJA ↓ (con rebote)",
+      "El precio está consolidando entre 46,200–46,800 después de la caída. Pequeño rebote posible antes de continuar bajando hacia 46,200."
+    ],
+    [
+      "RECOMENDACIÓN DEL DÍA",
+      "VENDER en zona 47,300–47,450",
+      "Espera que el precio suba hasta esa zona, aparezca una vela roja de cuerpo grande en el gráfico de 15 min, y entra a vender con Stop en 47,620."
+    ]
+  ],
+
+  "tf_analisis": {
+    "Semanal": "Lo que se ve: El Dow Jones lleva más de 3 años subiendo sin parar — es como alguien subiendo una escalera muy larga. El último peldaño fue enorme: llegó al máximo histórico de 50,268 puntos el 10 de febrero de 2026. Pero el último candle (barra) de la semana es rojo y de cuerpo grande, lo que significa que los grandes inversores empezaron a vender desde ese máximo. En trading esto se llama 'distribución': los grandes jugadores vendieron sus posiciones en el punto más alto para tomar sus ganancias. El sesgo semanal es bajista mientras el precio esté por debajo de 48,500.",
+
+    "Diario": "Lo que se ve: Después del máximo de 50,268, el precio viene cayendo de forma ordenada — cada día cierra más bajo que el anterior. La caída acumulada es de aproximadamente 3,700 puntos (7.4%) en poco más de un mes. Los candles diarios tienen cuerpos bajistas consistentes, lo que confirma que los vendedores tienen el control. El nivel más importante a vigilar desde arriba es 47,300–47,500: es la zona donde el precio hizo una pausa antes de la última gran caída. Si el precio regresa ahí, es la oportunidad para vender.",
+
+    "H4": "Lo que se ve: En el gráfico de 4 horas se ve claramente la secuencia de máximos y mínimos cada vez más bajos (como una escalera que baja). El precio hizo varios rebotes hacia arriba pero cada vez que intentó subir encontró vendedores fuertes que lo devolvieron abajo. La zona 47,300–47,500 es el 'techo de ventas' más visible: ahí el precio fue rechazado con fuerza en al menos dos ocasiones. El precio actual de ~46,558 está en la parte baja del rango reciente y puede hacer un rebote antes del siguiente movimiento bajista.",
+
+    "H1": "Lo que se ve: En la última hora el precio está consolidando entre 46,200 y 46,800. Este movimiento lateral es una pausa después de la fuerte caída desde 50,268. Dos escenarios posibles: (1) el precio rebota hacia 47,300–47,450 — ese es el momento de vender; (2) el precio rompe por debajo de 46,200 sin rebotar — entrada directa en breakdown. Lo que hay que esperar es que el precio defina dirección con una vela de cuerpo grande.",
+
+    "15min": "Lo que se ve: En los últimos 15 minutos el precio está haciendo un movimiento lateral con intentos de subir. Lo que hay que esperar aquí es un 'cambio de carácter bajista' (CHoCH): una vela de cuerpo grande hacia abajo que cierre por debajo de un mínimo reciente — esa es la señal de que los vendedores tomaron el control en esta escala pequeña. Si el precio primero sube hacia 47,300 y luego aparece esa vela bajista grande, es la entrada de alta probabilidad.",
+
+    "5min": "Lo que se ve: Es el mapa más detallado del precio. El precio está moviéndose en un rango pequeño buscando dirección. La zona exacta donde esperar la entrada es 47,300–47,450. Cuando el precio llegue ahí y aparezca una vela roja de cuerpo grande (que cierre bajando con fuerza), ese es el momento exacto para vender. Stop Loss por encima del máximo del rebote en 47,620. Primer objetivo en 46,800. Segundo objetivo en 46,200."
+  },
+
+  "operacion_filas": [
+    [
+      "¿COMPRAR o VENDER?",
+      "VENDER — apostamos a que el precio seguirá bajando desde la zona de resistencia"
+    ],
+    [
+      "¿EN QUÉ PRECIO ENTRAS?",
+      "47,350 → Solo entra cuando el precio llegue exactamente a esa zona y aparezca la señal de vuelta bajista"
+    ],
+    [
+      "¿CUÁNDO SALIR SI PIERDES? (Stop Loss)",
+      "47,620 → Si el precio sube hasta 47,620, CIERRA la operación. Pérdida de 270 puntos, pequeña y controlada."
+    ],
+    [
+      "¿CUÁNDO TOMAR LA PRIMERA GANANCIA? (Objetivo 1)",
+      "46,800 → Cuando el precio llegue a 46,800, cierra la mitad de la posición. Ya aseguraste ganancia (550 puntos)."
+    ],
+    [
+      "¿CUÁNDO TOMAR TODA LA GANANCIA? (Objetivo 2)",
+      "46,200 → Cuando llegue a 46,200, cierra el resto. Es la ganancia máxima: 1,150 puntos desde la entrada."
+    ],
+    [
+      "¿CUÁNTO PUEDES GANAR?",
+      "Objetivo 1: ganas 2 veces lo arriesgado (R:R 2:1)  /  Objetivo 2: ganas 4.2 veces lo arriesgado (R:R 4.2:1)"
+    ],
+    [
+      "¿CUÁNDO CANCELAR TODO?",
+      "Si el precio cierra una vela de 4 horas POR ENCIMA de 47,700: el análisis ya no es válido. El mercado cambió de dirección."
+    ],
+    [
+      "¿A QUÉ HORA ENTRAR?",
+      "Horario de mayor actividad en Bogotá: Mañana 9am–12pm (apertura NY)  /  Tarde 2pm–6pm (NY mid session)"
+    ]
+  ],
+
+  "explicaciones": [
+    [
+      "¿QUÉ PASÓ?",
+      "El Dow Jones subió durante 3 años hasta alcanzar 50,268 puntos el 10 de febrero de 2026 — el máximo histórico. Desde ahí los grandes inversores comenzaron a vender masivamente. El precio ya cayó más de 3,700 puntos. Las tensiones en el Estrecho de Hormuz (petróleo a $93.62) y el desempleo subiendo al 4.4% están pesando sobre el mercado."
+    ],
+    [
+      "¿POR QUÉ LA ZONA 47,300–47,450?",
+      "Es el último lugar donde el precio se detuvo antes de la caída más reciente. Los grandes vendedores dejaron sus órdenes pendientes ahí. Si el precio regresa a esa zona, esas órdenes de venta se activarán de nuevo y el precio volverá a caer. En trading esto se llama 'Order Block bajista' — una zona donde las instituciones venden en grande."
+    ],
+    [
+      "¿QUÉ SE ESPERA?",
+      "Que el precio rebote desde el nivel actual (~46,558) hasta la zona 47,300–47,450. Una vez que llegue ahí y aparezca la señal de vuelta, el precio debería caer hacia 46,200 (primer objetivo) y posiblemente hasta 45,000 si la presión bajista continúa."
+    ],
+    [
+      "¿QUÉ SEÑAL ESPERAR ANTES DE ENTRAR?",
+      "En el gráfico de 5 minutos, espera que el precio llegue a 47,350 y aparezca una vela roja de cuerpo grande que cierre hacia abajo con fuerza. Esa vela es la confirmación de que los vendedores tomaron el control en esa zona exacta. Sin esa vela, NO entres."
+    ]
+  ],
+
+  "checklist": [
+    "☐  ¿La tendencia de 4 horas y 1 hora van en la misma dirección (las dos bajando)?",
+    "☐  ¿El precio llegó a la zona 47,300–47,450? → Solo entras cuando toca esa zona exacta",
+    "☐  ¿El precio hizo un pico rápido hacia arriba y volvió a bajar? → Trampa para compradores (liquidity sweep)",
+    "☐  ¿Estás en horario de alta actividad? → 9am–12pm o 2pm–6pm hora Bogotá",
+    "☐  ¿Apareció una vela roja grande en el gráfico de 15 minutos en esa zona? → Confirmación de entrada",
+    "☐  ¿El precio está en zona 'cara' (premium)? → 47,300–47,450 está por encima del punto medio de la caída",
+    "☐  ¿El volumen es alto en la zona de venta? (si tienes ese indicador) → Volumen alto = grandes vendedores activos",
+    "☐  ¿El flujo de órdenes (CVD) está bajando en el rebote? (si tienes ese indicador) → CVD plano o bajando = fuerza vendedora"
+  ],
+
+  "riesgo_filas": [
+    [
+      "REGLA DE ORO",
+      "Nunca arriesgues más del 1% de tu capital en una sola operación. Con $10,000 → máximo pierdes $100."
+    ],
+    [
+      "¿CÓMO CALCULAR LOS LOTES?",
+      "Fórmula: Capital × 1% ÷ distancia al Stop Loss en $ = tamaño de posición. SL = 270 puntos."
+    ],
+    [
+      "EJEMPLO PARA ESTA OPERACIÓN",
+      "Capital $10,000 → arriesgas $100 → Stop Loss a 270 puntos → 0.37 lotes mini. Si ganas Obj.1 (550 pts): +$204. Si ganas Obj.2 (1,150 pts): +$426."
+    ],
+    [
+      "SI PIERDES 3 VECES SEGUIDAS",
+      "Para de operar ese día. Revisa el análisis. Las pérdidas seguidas indican que el mercado cambió o hay algo que no estás viendo."
+    ],
+    [
+      "PÉRDIDA MÁXIMA DEL DÍA",
+      "Si en un día pierdes el 3% de tu capital ($300 sobre $10,000), CIERRA TODO y descansa. El mercado sigue mañana."
+    ]
+  ]
+}

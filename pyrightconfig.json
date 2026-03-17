@@ -1,0 +1,7 @@
+{
+  "include": ["."],
+  "venvPath": "/Users/carlossaavedra/Documents/CARLOS SAAVEDRA/CLAUDE/TRADER PRO/scripts",
+  "venv": "venv",
+  "pythonVersion": "3.14",
+  "pythonPlatform": "Darwin"
+}

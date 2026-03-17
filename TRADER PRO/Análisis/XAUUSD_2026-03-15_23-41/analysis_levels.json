@@ -1,0 +1,27 @@
+{
+  "asset": "XAUUSD",
+  "fecha": "2026-03-15",
+  "direction": "SELL",
+  "entry": 5092.0,
+  "sl": 5115.0,
+  "tp1": 5020.0,
+  "tp2": 4960.0,
+  "rr1": 2.5,
+  "rr2": 4.0,
+  "ob_zones": [
+    {
+      "type": "bearish",
+      "top": 5100.0,
+      "bottom": 5080.0,
+      "tf": "H4",
+      "label": "Zona de Rebote H4 — vender si el precio llega aqui"
+    },
+    {
+      "type": "bearish",
+      "top": 5160.0,
+      "bottom": 5140.0,
+      "tf": "1D",
+      "label": "Zona de Rebote Diaria — maximo historico, resistencia fuerte"
+    }
+  ]
+}

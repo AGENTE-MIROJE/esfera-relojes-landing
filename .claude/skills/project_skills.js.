@@ -1,0 +1,13 @@
+/**
+ * @description Carga las instrucciones personalizadas de los módulos MD
+ */
+export const skills = {
+  get_project_context: {
+    description: "Carga el contexto específico para Generador de Proyectos, Office o Trader.",
+    execute: async ({ moduleName }) => {
+      // Esta función le permite a Claude leer tus archivos .md 
+      // y aplicar las reglas detalladas que escribiste en ellos.
+      return `Cargando reglas de ${moduleName}...`;
+    }
+  }
+};

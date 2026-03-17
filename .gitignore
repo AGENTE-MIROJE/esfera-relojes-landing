@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Claude local settings (sensibles)
+.claude/settings.local.json
+
+# Cookies y credenciales sensibles
+*cookies*.json
+tv_cookies.json
+
+# Archivos temporales
+*.tmp
+*.log
+*.bak
