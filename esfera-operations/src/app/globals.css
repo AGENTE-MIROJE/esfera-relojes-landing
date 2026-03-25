@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black:   #0F0F0F;
+  --gold:    #D4A017;
+  --crimson: #C8102E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--black);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Scrollbar premium */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0F0F0F; }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* Selección de texto */
+::selection { background: var(--gold); color: #0F0F0F; }
+
+@layer utilities {
+  .text-gold { color: var(--gold); }
+  .bg-gold   { background-color: var(--gold); }
+  .border-gold { border-color: var(--gold); }
+  .text-crimson { color: var(--crimson); }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4A017 0%, #F5D06C 50%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-luxury {
+    background: linear-gradient(145deg, #1A1A1A 0%, #0F0F0F 100%);
+    border: 1px solid rgba(212, 160, 23, 0.2);
+    transition: all 0.3s ease;
+  }
+  .card-luxury:hover {
+    border-color: rgba(212, 160, 23, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(212, 160, 23, 0.12);
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, #D4A017, #B8860B);
+    color: #0F0F0F;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease;
+  }
+  .btn-gold:hover {
+    background: linear-gradient(135deg, #F5D06C, #D4A017);
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(212, 160, 23, 0.4);
+  }
+
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #D4A017, transparent);
+  }
+}

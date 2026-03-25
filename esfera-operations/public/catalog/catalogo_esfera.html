@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esfera Relojes — Catálogo 2026</title>
+<style>
+  :root {
+    --black: #0F0F0F;
+    --gold: #D4A017;
+    --crimson: #C8102E;
+    --grey: #1A1A1A;
+    --light: #F5F0E8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--black); color: white; font-family: 'Georgia', serif; }
+  
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0F0F0F 70%);
+    text-align: center; padding: 40px;
+    border-bottom: 1px solid var(--gold);
+  }
+  .hero-logo { font-size: 14px; letter-spacing: 8px; color: var(--gold); margin-bottom: 20px; }
+  .hero-title { font-size: clamp(36px, 6vw, 72px); line-height: 1.1; margin-bottom: 20px; }
+  .hero-title span { color: var(--gold); }
+  .hero-sub { font-size: 16px; color: #888; letter-spacing: 3px; margin-bottom: 40px; }
+  .hero-badges { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .badge {
+    background: rgba(212,160,23,0.1); border: 1px solid var(--gold);
+    padding: 10px 20px; font-size: 12px; letter-spacing: 2px; color: var(--gold);
+  }
+
+  .catalog { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+  .section-title {
+    font-size: 12px; letter-spacing: 6px; color: var(--gold);
+    text-align: center; margin-bottom: 60px;
+  }
+  .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2px; }
+  
+  .product-card {
+    background: var(--grey);
+    position: relative; overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  .product-card:hover { transform: scale(1.02); z-index: 1; }
+  .product-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--gold);
+  }
+  .product-image {
+    aspect-ratio: 1; background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 80px; position: relative;
+  }
+  .product-image::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(212,160,23,0.05) 0%, transparent 70%);
+  }
+  .product-info { padding: 24px; }
+  .product-name { font-size: 18px; margin-bottom: 4px; }
+  .product-sub { font-size: 12px; color: #666; letter-spacing: 2px; margin-bottom: 16px; }
+  .product-features { list-style: none; margin-bottom: 20px; }
+  .product-features li { font-size: 12px; color: #888; padding: 4px 0; border-bottom: 1px solid #222; }
+  .product-features li::before { content: '✦ '; color: var(--gold); }
+  .product-price { font-size: 28px; color: var(--gold); margin-bottom: 4px; }
+  .product-price-sub { font-size: 11px; color: #666; letter-spacing: 1px; }
+  .product-cta {
+    display: block; width: 100%; margin-top: 20px;
+    background: transparent; border: 1px solid var(--gold);
+    color: var(--gold); padding: 12px; text-align: center;
+    font-size: 11px; letter-spacing: 3px; cursor: pointer;
+    text-decoration: none; transition: all 0.3s;
+  }
+  .product-cta:hover { background: var(--gold); color: var(--black); }
+
+  .product-badge {
+    position: absolute; top: 16px; right: 16px;
+    background: var(--crimson); color: white;
+    font-size: 10px; padding: 4px 10px; letter-spacing: 1px;
+  }
+  .product-badge.new { background: var(--gold); color: var(--black); }
+
+  .wa-float {
+    position: fixed; bottom: 30px; right: 30px;
+    background: #25D366; color: white;
+    width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    animation: pulse 2s infinite;
+    z-index: 100;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 40px rgba(37,211,102,0.8); }
+  }
+
+  .footer {
+    background: #080808; padding: 60px 20px; text-align: center;
+    border-top: 1px solid #222;
+  }
+  .footer-logo { font-size: 12px; letter-spacing: 8px; color: var(--gold); margin-bottom: 20px; }
+  .footer-info { font-size: 12px; color: #666; line-height: 2; }
+  .footer-socials { margin-top: 20px; display: flex; gap: 20px; justify-content: center; }
+  .social-link { color: var(--gold); text-decoration: none; font-size: 12px; letter-spacing: 2px; }
+
+  .guarantee-strip {
+    background: var(--gold); color: var(--black);
+    padding: 16px; text-align: center;
+    font-size: 12px; letter-spacing: 3px; font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-logo">⌚ ESFERA RELOJES</div>
+  <h1 class="hero-title">Lujo silencioso.<br><span>Precio real.</span></h1>
+  <p class="hero-sub">COLECCIÓN 2026 — CURREN PREMIUM</p>
+  <div class="hero-badges">
+    <div class="badge">🚚 ENVÍO GRATIS</div>
+    <div class="badge">💳 CONTRA ENTREGA</div>
+    <div class="badge">⭐ GARANTÍA 1 AÑO</div>
+    <div class="badge">🇨🇴 TODA COLOMBIA</div>
+  </div>
+</div>
+
+<div class="guarantee-strip">
+  PAGA CUANDO LO RECIBAS — ENVÍO EN 2 A 3 DÍAS HÁBILES — GARANTÍA TOTAL
+</div>
+
+<div class="catalog">
+  <p class="section-title">NUESTRA COLECCIÓN</p>
+  <div class="products">
+
+    <div class="product-card">
+      <div class="product-image">⌚</div>
+      <div class="product-badge new">MÁS VENDIDO</div>
+      <div class="product-info">
+        <div class="product-name">Curren 8023</div>
+        <div class="product-sub">CLÁSICO DORADO</div>
+        <ul class="product-features">
+          <li>Correa acero inoxidable 316L</li>
+          <li>Cristal mineral anti-rayones</li>
+          <li>Resistente al agua 3ATM</li>
+          <li>Mecanismo japonés</li>
+          <li>Esfera dorada sunburst</li>
+        </ul>
+        <div class="product-price">$147.000</div>
+        <div class="product-price-sub">COP • CONTRA ENTREGA</div>
+        <a href="https://wa.me/573025484940?text=Hola%20quiero%20el%20Curren%208023%20Cl%C3%A1sico%20Dorado" 
+           class="product-cta" target="_blank">PEDIR AHORA →</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">⌚</div>
+      <div class="product-badge">NUEVO</div>
+      <div class="product-info">
+        <div class="product-name">Curren 8055</div>
+        <div class="product-sub">DEPORTIVO NEGRO</div>
+        <ul class="product-features">
+          <li>Correa silicona premium</li>
+          <li>Dial negro mate</li>
+          <li>Resistente al agua 5ATM</li>
+          <li>Cronógrafo decorativo</li>
+          <li>Luz LED nocturna</li>
+        </ul>
+        <div class="product-price">$180.000</div>
+        <div class="product-price-sub">COP • CONTRA ENTREGA</div>
+        <a href="https://wa.me/573025484940?text=Hola%20quiero%20el%20Curren%208055%20Deportivo" 
+           class="product-cta" target="_blank">PEDIR AHORA →</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">⌚</div>
+      <div class="product-info">
+        <div class="product-name">Curren 8238</div>
+        <div class="product-sub">EJECUTIVO PLATA</div>
+        <ul class="product-features">
+          <li>Diseño slim ultra-delgado</li>
+          <li>Correa cuero genuino</li>
+          <li>Resistente al agua 3ATM</li>
+          <li>Mecanismo japonés premium</li>
+          <li>Ideal para traje y corbata</li>
+        </ul>
+        <div class="product-price">$222.000</div>
+        <div class="product-price-sub">COP • CONTRA ENTREGA</div>
+        <a href="https://wa.me/573025484940?text=Hola%20quiero%20el%20Curren%208238%20Ejecutivo" 
+           class="product-cta" target="_blank">PEDIR AHORA →</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">⌚</div>
+      <div class="product-info">
+        <div class="product-name">Curren 8314</div>
+        <div class="product-sub">DAMA ELEGANTE</div>
+        <ul class="product-features">
+          <li>Esfera con cristales decorativos</li>
+          <li>Correa acero rosado</li>
+          <li>Diseño delicado y femenino</li>
+          <li>Resistente al agua 3ATM</li>
+          <li>Empaque regalo incluido</li>
+        </ul>
+        <div class="product-price">$163.000</div>
+        <div class="product-price-sub">COP • CONTRA ENTREGA</div>
+        <a href="https://wa.me/573025484940?text=Hola%20quiero%20el%20Curren%208314%20Dama" 
+           class="product-cta" target="_blank">PEDIR AHORA →</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">⌚</div>
+      <div class="product-badge">OFERTA</div>
+      <div class="product-info">
+        <div class="product-name">Curren 8247</div>
+        <div class="product-sub">CASUAL VINTAGE</div>
+        <ul class="product-features">
+          <li>Correa cuero café vintage</li>
+          <li>Esfera retro bicolor</li>
+          <li>Resistente al agua 3ATM</li>
+          <li>Mecanismo Miyota japonés</li>
+          <li>Caja redonda clásica</li>
+        </ul>
+        <div class="product-price">$197.000</div>
+        <div class="product-price-sub">COP • CONTRA ENTREGA</div>
+        <a href="https://wa.me/573025484940?text=Hola%20quiero%20el%20Curren%208247%20Vintage" 
+           class="product-cta" target="_blank">PEDIR AHORA →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-logo">⌚ ESFERA RELOJES</div>
+  <div class="footer-info">
+    📲 WhatsApp: 3025484940<br>
+    📸 Instagram: @esfera.relojes<br>
+    🎵 TikTok: @esfera.relojes<br>
+    🇨🇴 Envío a toda Colombia — Contra entrega
+  </div>
+  <div class="footer-socials">
+    <a href="https://instagram.com/esfera.relojes" class="social-link">INSTAGRAM</a>
+    <a href="https://tiktok.com/@esfera.relojes" class="social-link">TIKTOK</a>
+    <a href="https://wa.me/573025484940" class="social-link">WHATSAPP</a>
+  </div>
+</div>
+
+<a href="https://wa.me/573025484940?text=Hola%2C%20vi%20el%20cat%C3%A1logo%20y%20quiero%20informaci%C3%B3n" 
+   class="wa-float" target="_blank">💬</a>
+
+</body>
+</html>
