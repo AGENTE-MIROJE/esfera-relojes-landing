@@ -15,7 +15,33 @@ const CATALOG = [
   { ref: "8426", name: "Curren Wave Dial", price: 160000, colors: ["Plateado-Azul", "Plateado-Negro", "Azul", "Dorado-Negro", "Dorado-Verde"], img: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=600" },
   { ref: "8427", name: "Curren Roman Class", price: 180000, colors: ["Plateado Blanco"], img: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=600" },
   { ref: "8314", name: "Curren Steel Classic", price: 170000, colors: ["Acero"], img: "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600" },
-  { ref: "8336", name: "Curren Urban Slim", price: 165000, colors: ["Negro", "Plateado"], img: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600" },
+  { ref: "8336", name: "Curren Urban Slim", price: 165000, colors: ["Negro", "Plateado"], img: "https://images.unsplash.com/p
+      { ref: "8106", name: "Curren Executive Pro", price: 163000, colors: ["Negro", "Dorado"], img: "https://images.unsplash.c
+         { ref: "8340", name: "Curren Shadow Elite", price: 197000, colors: ["Negro", "Oro Rosa"], img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d" },
+  { ref: "8441", name: "Curren Night King", price: 180000, colors: ["Negro", "Cuero"], img: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56" },
+  { ref: "8225", name: "Curren Bold Statement", price: 222000, colors: ["Negro", "Oro Rosa"], img: "https://images.unsplash.com/photo-1495704907664-81f74a7efd9b" },
+  { ref: "8023", name: "Curren Prestige Slim", price: 147000, colors: ["Plateado", "Negro"], img: "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6" },
+  { ref: "8379", name: "Curren Titanium Sport", price: 210000, colors: ["Gris", "Azul"], img: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e" },
+  { ref: "8270", name: "Curren Ocean Pro", price: 195000, colors: ["Azul", "Negro"], img: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f" },
+  { ref: "8385", name: "Curren Carbon Elite", price: 235000, colors: ["Negro", "Carbono"], img: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3" },
+  { ref: "8350", name: "Curren Aviator Pro", price: 205000, colors: ["Marrón", "Dorado"], img: "https://images.unsplash.com/photo-1568010434570-74e9ba7126bc" },
+  { ref: "8363", name: "Curren Master Dual", price: 188000, colors: ["Plateado", "Negro"], img: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5" },
+  { ref: "8365", name: "Curren Eclipse Chrono", price: 198000, colors: ["Negro", "Oro"], img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314" },o
+    { ref: "8382", name: "Curren Urban Legend", price: 175000, colors: ["Negro", "Blanco"], img: "https://images.unsplash.com/photo-1547043058-b9dd92b2c57c" },
+  { ref: "8371", name: "Curren Diamond Pro", price: 240000, colors: ["Plateado", "Dorado"], img: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" },
+  { ref: "8366", name: "Curren Royal Chrono", price: 215000, colors: ["Azul", "Plateado"], img: "https://images.unsplash.com/photo-1535525153412-5a42439a210d" },
+  { ref: "8346", name: "Curren Steel Master", price: 192000, colors: ["Acero", "Negro"], img: "https://images.unsplash.com/photo-1617043786394-f977fa12eddf" },
+  { ref: "8377", name: "Curren Pilot Elite", price: 203000, colors: ["Verde", "Marrón"], img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" },
+  { ref: "8355", name: "Curren Vintage Pro", price: 185000, colors: ["Marrón", "Beige"], img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d" },
+  { ref: "8383", name: "Curren Racing Pro", price: 218000, colors: ["Rojo", "Negro"], img: "https://images.unsplash.com/photo-1587836374228-4dbafa94cf0e" },
+  { ref: "8390", name: "Curren Business Elite", price: 202000, colors: ["Gris", "Plateado"], img: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8" },
+  { ref: "8400", name: "Curren Luxury Gold", price: 255000, colors: ["Dorado", "Negro"], img: "https://images.unsplash.com/photo-1622434641406-a158123450f9" },
+  { ref: "8405", name: "Curren Sport Master", price: 189000, colors: ["Azul", "Negro"], img: "https://images.unsplash.com/photo-1539874754764-5a96559165b0" },
+  { ref: "8420", name: "Curren Classic Retro", price: 168000, colors: ["Marrón", "Crema"], img: "https://images.unsplash.com/photo-1522043097880-e21c6fd10719" },
+  { ref: "8430", name: "Curren Steel Pro", price: 194000, colors: ["Plateado", "Negro"], img: "https://images.unsplash.com/photo-1516041489687-d8b8d5a4a37f" },
+  { ref: "8435", name: "Curren Phantom Black", price: 201000, colors: ["Negro", "Gris"], img: "https://images.unsplash.com/photo-1546868871-0d827a0fbb39" },
+  { ref: "8445", name: "Curren Executive Elite", price: 228000, colors: ["Plateado", "Azul"], img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d" },
+  { ref: "8450", name: "Curren Minimal Pro", price: 176000, colors: ["Blanco", "Negro"], img: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1" },m/photo-1523275335684-37898b6baf30" },hoto-1508685096489-7aacd43bd3b1?w=600" },
 ];
 
 export default function CatalogoPage() {
