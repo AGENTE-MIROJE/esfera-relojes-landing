@@ -75,7 +75,7 @@ export default function Home() {
             <span className="gold-gradient">Precisión</span> que se lleva
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-            Relojes Curren seleccionados para el hombre colombiano que entiende el estilo sin excesos.
+            Tu tiempo vale demasiado para llevarlo en cualquier cosa. Porque tú ya sabes quién eres — solo falta que los demás también lo sepan.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
