@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import HeroSection from "@/components/HeroSection";
 import SocialProof from "@/components/SocialProof";
 import ClubEsfera from "@/components/ClubEsfera";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
 import Link from "next/link";
 
 const PRODUCTS = [
@@ -144,6 +145,9 @@ export default function Home() {
       </footer>
 
       <WhatsAppButton defaultProduct="Esfera Collection" />
+      
+      {/* Social Media Floating Buttons */}
+      <SocialMediaLinks />
     </main>
   );
 }
