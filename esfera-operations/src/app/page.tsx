@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import HeroSection from "@/components/HeroSection";
 import SocialProof from "@/components/SocialProof";
 import ClubEsfera from "@/components/ClubEsfera";
+import Link from "next/link";
 
 const PRODUCTS = [
   { id: "CURREN-8106", name: "Curren Executive Pro", model_ref: "CURREN-8106", pvp_cop: 163000, original_cop: 280000, sale_angle: "El reloj del CEO joven — elegancia sin pretensiones", description: "Cronógrafo acero inoxidable dorado. Movimiento japonés de precisión.", image: "/watches/curren-8106.jpg", badge: "MÁS VENDIDO", badge_color: "bg-[#C8102E]" },
@@ -41,7 +42,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl md:text-2xl font-black tracking-[0.3em] gold-gradient">ESFERA</div>
           <div className="hidden md:flex gap-8 text-[10px] text-gray-400 tracking-wider uppercase font-bold">
-            <a href="#catalogo" className="hover:text-[#D4A017] transition-colors">Catálogo</a>
+            <Link href="/catalogo" className="hover:text-[#D4A017] transition-colors">Catálogo</Link>
             <a href="#proceso" className="hover:text-[#D4A017] transition-colors">¿Cómo funciona?</a>
             <a href="#club" className="hover:text-[#D4A017] transition-colors">Club Esfera</a>
           </div>
@@ -96,7 +97,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <a href="#catalogo" className="btn-gold inline-block px-8 py-4 rounded-xl text-xs uppercase tracking-widest font-black">Ver para regalar</a>
+            <Link href="/catalogo" className="btn-gold inline-block px-8 py-4 rounded-xl text-xs uppercase tracking-widest font-black">Ver para regalar</a>
           </div>
           <div className="w-full md:w-1/3 aspect-square bg-[#0F0F0F] rounded-2xl border border-white/5 flex items-center justify-center text-6xl">🎁</div>
         </div>
